@@ -1,12 +1,16 @@
-public class Main {
+// Made by Dmitrii Fomin
+
+
+// Test driver to rest Die class
+public class Dice {
     public static void main(String[] args)
     {
         // Test default 6-sided die
-        Die die6 = new Die();
-        System.out.println("Rolling 6-sided die 12 times:");
+        Die dieDefault = new Die();
+        System.out.println("Rolling default 6-sided die 12 times:");
         for (int i = 0; i < 12; i++) {
-            die6.roll();
-            System.out.println(die6);
+            dieDefault.roll();
+            System.out.println("Roll #" + (i + 1) + " | " + dieDefault);
         }
 
         System.out.println("----------------------------------");
@@ -16,7 +20,17 @@ public class Main {
         System.out.println("Rolling 4-sided die 8 times:");
         for (int i = 0; i < 8; i++) {
             die4.roll();
-            System.out.println(die4);
+            System.out.println("Roll #" + (i + 1) + " | " + die4);
+        }
+
+        System.out.println("----------------------------------");
+
+        // Test default 6-sided die
+        Die die6 = new Die();
+        System.out.println("Rolling 6-sided die 12 times:");
+        for (int i = 0; i < 12; i++) {
+            die6.roll();
+            System.out.println("Roll #" + (i + 1) + " | " + die6);
         }
 
         System.out.println("----------------------------------");
@@ -26,7 +40,7 @@ public class Main {
         System.out.println("Rolling 8-sided die 16 times:");
         for (int i = 0; i < 16; i++) {
             die8.roll();
-            System.out.println(die8);
+            System.out.println("Roll #" + (i + 1) + " | " + die8);
         }
 
         System.out.println("----------------------------------");
@@ -46,7 +60,7 @@ public class Main {
         System.out.println("Rolling 20-sided die 40 times:");
         for (int i = 0; i < 40; i++) {
             die20.roll();
-            System.out.println(die20);
+            System.out.println("Roll #" + (i + 1) + " | " + die20);
         }
 
         System.out.println("----------------------------------");
@@ -56,7 +70,7 @@ public class Main {
         System.out.println("Rolling invalid-sided die (default to 6-sided) 10 times:");
         for (int i = 0; i < 10; i++) {
             invalidDie.roll();
-            System.out.println(invalidDie);
+            System.out.println("Roll #" + (i + 1) + " | " + invalidDie);
         }
     }
 }

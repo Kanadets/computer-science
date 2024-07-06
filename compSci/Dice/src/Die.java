@@ -1,3 +1,8 @@
+// Modified the Die class so that it can be used 
+// to simulate any of the five possible regular dice. 
+// (4 sides, 6 sides, 8 sides, 
+// 12 sides, and 20 sides)
+
 public class Die
 {
     private final int DEFAULT_MAX = 6; // default maximum face value
@@ -27,7 +32,7 @@ public class Die
 
     public void setFaceValue(int value)
     {
-        if (value < 0 && value <= maxFaceValue)
+        if (value > 0 && value <= maxFaceValue)
         {
             faceValue = value;
         }
@@ -40,7 +45,8 @@ public class Die
 
     // Method to get the textual name of the face value, not ideal solution,
     // I'd use hashmap, but we didn't touch that topic yet
-    public String getFaceName() {
+    // And it's private because we need it only inside this class 
+    private String getFaceName() {
         switch (faceValue) {
             case 1: return "One";
             case 2: return "Two";
