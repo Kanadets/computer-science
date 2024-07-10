@@ -1,2 +1,4 @@
-package DiceSet;public class Main {
+package DiceSet;
+
+public class Main {
 }

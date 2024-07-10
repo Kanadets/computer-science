@@ -5,6 +5,7 @@ package Dice.src;
 // (4 sides, 6 sides, 8 sides, 
 // 12 sides, and 20 sides)
 
+
 public class Die
 {
     private final int DEFAULT_MAX = 6; // default maximum face value
