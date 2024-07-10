@@ -1,3 +1,5 @@
+package Dice.src;
+
 public class Die
 {
     private final int DEFAULT_MAX = 6; // default maximum face value

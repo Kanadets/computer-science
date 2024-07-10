@@ -1,3 +1,5 @@
+package Cat.src;
+
 public class Cat
 {
     private int position;
