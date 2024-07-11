@@ -1,3 +1,11 @@
+// Made by Dmitrii Fomin
+
+// Implemented a class called ArrayOps, which has a character array. The constructor receives a parameter,
+// which is the size of the array to be dynamically allocated in the constructor,
+// then populates that array with random characters from the range ‘a’ through ‘z’.
+// Methods are required to return the lowest value and highest value,
+// as well as a String representation of the array values.
+
 package ArrayOps;
 
 import java.util.Random;
@@ -18,7 +26,7 @@ public class ArrayOps {
         }
     }
 
-    // Method to find the lowest value (lexicographically) in the array
+    // Method to find the lowest value in the array
     public char getLowestValue()
     {
         char lowest = charArray[0];
@@ -34,7 +42,7 @@ public class ArrayOps {
         return lowest;
     }
 
-    // Method to find the highest value (lexicographically) in the array
+    // Method to find the highest value in the array
     public char getHighestValue()
     {
         char highest = charArray[0];
@@ -50,6 +58,7 @@ public class ArrayOps {
         return highest;
     }
 
+    // Method to get a String representation of the array
     public String toString()
     {
         String result = "";
